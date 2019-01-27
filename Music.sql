@@ -7,7 +7,7 @@ CREATE TABLE Artists(
 CREATE TABLE Albums(
 	AlbumID INT PRIMARY KEY IDENTITY,
 	Name nvarchar(50) NOT NULL,
-	YearOfRelease datetime2 NOT NULL,
+	YearOfRelease INT NOT NULL,
 	ArtistID INT NOT NULL FOREIGN KEY REFERENCES Artists(ArtistID)
 )
 
@@ -50,32 +50,32 @@ INSERT INTO Albums
 VALUES
 (
 	'...And Justice For All',
-	'19880825 00:00:00 AM',
+	'1988',
 	1
 ),
 (
 	'Master Of Puppets',
-	'19860303 00:00:00 AM',
+	'1986',
 	1
 ),
 (
 	'Ace Of Spades',
-	'19801108 00:00:00 AM',
+	'1980',
 	2
 ),
 (
 	'Overkill',
-	'19790424 00:00:00 AM',
+	'1979',
 	2
 ),
 (
 	'Rust In Peace',
-	'19900924 00:00:00 AM',
+	'1990',
 	3
 ),
 (
 	'Peace Sells... But Whos Buying?',
-	'19860919 00:00:00 AM',
+	'1986',
 	3
 )
 
